@@ -1,0 +1,19 @@
+from easydict import EasyDict
+sets = EasyDict()
+sets.gpu_id='cuda:0'
+sets.n_epochs = 501
+sets.batch_size = 4
+sets.patience = 10
+sets.num_workers = 4
+sets.learning_rate = 1e-4
+sets.momentum = 0.8
+sets.weight_decay = 1e-2
+sets.optim="adamw"
+sets.pretrain_m='r3d152_KM_200ep.pth'
+sets.model_conv1_t_size=3
+sets.model_conv1_t_stride=2
+sets.model_no_max_pool=False
+sets.model_shortcut_type="A"
+sets.model_widen_factor=2.0
+sets.SA_ks=3
+sets.sigma=0.4
